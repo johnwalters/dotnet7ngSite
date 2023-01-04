@@ -1,5 +1,6 @@
 # dotnet7ngSite
-A dotnet core framework 7 website with angular and authentication and the fix for the 401 auth problem
+A dotnet core framework 7 website with angular and authentication and the fix for the 401 auth problem.
+
 401 auth problem: Somewhere along the line, when you create a .NET Core 6.0 website with Angular and authentication, in Visual Studio 2022, it wouldn't work out of the box. When testing in a localhost environment, registering a user, clicking the migration button, then clicking the Fetch Data option, you'd get a '401 unauthorized' error, so no data coming back from the WeatherForcast server side API. This repo contains just the Program.cs file with the change needed to fix that bug.
 
 To replicate:
