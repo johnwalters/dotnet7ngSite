@@ -3,7 +3,7 @@ A dotnet core framework 7 website with angular and authentication and the fix fo
 401 auth problem: Somewhere along the line, when you create a .NET Core 6.0 website with Angular and authentication, in Visual Studio 2022, it wouldn't work out of the box. When testing in a localhost environment, registering a user, clicking the migration button, then clicking the Fetch Data option, you'd get a '401 unauthorized' error, so no data coming back from the WeatherForcast server side API. This repo contains just the Program.cs file with the change needed to fix that bug.
 
 To replicate:
-1. In Viusal Studio 2022, Create a New Project, Search for templates with Angular, choose ASP.NET Dot Net Core with Angular, next, name it, next, choose Framework .NET 6.0 or .NET 7.0, Authentication Type = Individual Accounts, and select 'Do not use top-level statements', click Create.
+1. In Viusal Studio 2022, Create a New Project, Search for templates with Angular, choose ASP.NET Dot Net Core with Angular, click Next, name it, click Next, choose Framework .NET 6.0 or .NET 7.0, Authentication Type = Individual Accounts, and select 'Do not use top-level statements', click Create.
 
 2. Run it (it'll take awhile first time), register a new user, click the Apply Migrations button, refresh, log in, click Fetch Data. Nothing comes back, because you got a 401 authentication error on the API call to the server.
 
