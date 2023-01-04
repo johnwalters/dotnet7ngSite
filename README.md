@@ -1,7 +1,7 @@
 # dotnet7ngSite
 A fix for 'dotnet core website with angular and authentication "401 authentication error" problem'
 
-401 authentication error problem: Somewhere along the line, when you create a .NET Core 6.0 website with Angular and authentication, in Visual Studio 2022, it wouldn't work out of the box. When testing in a localhost environment, registering a user, clicking the migration button, then clicking the Fetch Data option, you'd get a '401 unauthorized' error, so no data coming back from the WeatherForcast server side API. This repo contains just the Program.cs file with the change needed to fix that bug.
+401 authentication error problem: Somewhere along the line, when you create a .NET Core website with Angular and authentication, in Visual Studio 2022, it wouldn't work out of the box. When testing in a localhost environment, registering a user, clicking the migration button, then clicking the Fetch Data option, you'd get a '401 unauthorized' error, so no data coming back from the WeatherForcast server side API. This repo contains just the Program.cs file with the change needed to fix that bug.
 
 To replicate:
 1. In Viusal Studio 2022, Create a New Project, Search for templates with Angular, choose ASP.NET Dot Net Core with Angular, click Next, name it, click Next, choose Framework .NET 6.0 or .NET 7.0, Authentication Type = Individual Accounts, and select 'Do not use top-level statements', click Create.
