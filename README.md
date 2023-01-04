@@ -8,7 +8,12 @@ To replicate:
 2. Run it (it'll take awhile first time), register a new user, click the Apply Migrations button, refresh, log in, click Fetch Data. Nothing comes back, because you got a 401 authentication error on the API call to the server.
 
 To fix the bug:
-1. Replace Program.cs in the created project with the one in this repo. Change the port number to the one that is in the created project's .cproj file, <PropertyGroup>|<SpaProxyServerUrl>https://localhost:PORTNUMBER</SpaProxyServerUrl>
+1. Replace Program.cs in the created project with the one in this repo. Change the port number to the one that is in the created project's .cproj file, 
+```
+<PropertyGroup>
+  <SpaProxyServerUrl>https://localhost:PORTNUMBER</SpaProxyServerUrl>
+ ...
+ ```
 
 2. That should do it.
   
